@@ -1,0 +1,13 @@
+
+function findMinMax(temperatures) {
+    let min = Math.min(...temperatures);
+    let max = Math.max(...temperatures);
+
+    return { minTemp: min, maxTemp: max };
+}
+
+let temps = [30, 25, 28, 32, 40, 20];
+let result = findMinMax(temps);
+
+console.log("Minimum Temperature:", result.minTemp);
+console.log("Maximum Temperature:", result.maxTemp);
